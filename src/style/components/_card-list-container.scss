@@ -1,0 +1,19 @@
+// This is a style for whole container for cards on pages:
+// - business-directory
+// - favorites
+
+.card-list-container {
+  &__main {
+    background-color: $color-white-dark;
+    padding: 1rem 0;
+  }
+
+  &__card {
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}

@@ -1,0 +1,99 @@
+// Footer styles
+
+.footer {
+  background-color: $color-white-light;
+  padding: 3rem 0;
+
+  @include respond(sm) {
+    padding-bottom: 8rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(sm) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      border-bottom: 3px solid $color-primary;
+    }
+
+    @include respond(sm) {
+      font-weight: 700;
+      padding: 1rem;
+    }
+  }
+
+  &__link {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: $color-secondary;
+
+    @include respond(sm) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(sm) {
+      align-items: center;
+    }
+
+    p {
+      @include respond(sm) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &--icons-box {
+      display: flex;
+
+      @include respond(sm) {
+        justify-content: space-between;
+        width: 50%;
+      }
+    }
+
+    &--icon-container {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  &__news {
+    display: none;
+
+    @include respond(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1rem 0;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}

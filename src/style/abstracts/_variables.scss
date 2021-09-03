@@ -1,0 +1,58 @@
+// #a98e4b - primary
+// #636363 - secondary
+
+// overriding bootstrap variables
+$primary: #a98d4b;
+$secondary: #636363;
+$white: #fff;
+$black: #000;
+$border-color: $primary;
+$border-width: 2px;
+
+// defining our color variables - only because of names
+$color-primary: $primary;
+$color-primary-semi-light: #c8b483;
+$color-primary-light: #e9e2d2;
+
+$color-secondary: $secondary;
+$color-secondary-dark: #3a3a3a;
+$color-secondary-light: #898989;
+$color-secondary-lighter: #b7b7b7;
+$color-secondary-lightest: #f7f7f7;
+
+$color-white: $white;
+$color-black: $black;
+$color-white-light: #f8f8f8;
+$color-white-dark: #f1f1f1;
+$color-white-third: #f6f3ec;
+
+$color-notification: #7d2b8b;
+$color-error: #e61919;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// defining link properties
+$link-color: $primary;
+$link-decoration: none;
+
+// breakpoint - possible override
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// $grid-gutter-width: 5rem;
+
+// container widths - possible override
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);

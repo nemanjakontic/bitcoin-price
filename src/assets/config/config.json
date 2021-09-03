@@ -1,0 +1,12 @@
+{
+  "appVersion": "v1",
+  "local": true,
+  "dev": false,
+  "test": false,
+  "production": false,
+  "api": {
+    "host": "http://localhost",
+    "port": 9093,
+    "prefix": "api"
+  }
+}

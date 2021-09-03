@@ -1,0 +1,36 @@
+<app-modal (onOpen)="openModal($event)">
+  <div modal-body>
+    <div class="write-review-modal">
+      <div class="write-review-modal__heading">
+        <h1>{{ "write_review_modal.write_review" | translate }}</h1>
+      </div>
+      <form class="form">
+        <div class="form__group">
+          <label for="rating" class="form__label">{{ "write_review_modal.select_rating" | translate }}</label>
+          <input type="text" class="form__input" id="rating">
+          <p class="form__error-feedback"></p>
+        </div>
+        <div class="form__group">
+          <label for="title" class="form__label">{{ "write_review_modal.review_title" | translate }}</label>
+          <input type="text" class="form__input" id="title" placeholder="{{ 'write_review_modal.review_title_placeholder' | translate }}">
+          <p class="form__error-feedback"></p>
+        </div>
+        <div class="form__group">
+          <label for="review" class="form__label">{{ "write_review_modal.your_review" | translate }}</label>
+          <textarea type="text" rows="15" class="form__input" id="review" placeholder="{{ 'write_review_modal.your_review_placeholder' | translate }}"></textarea>
+          <p class="form__error-feedback"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div modal-footer>
+    <div class="btn__group btn__group-center">
+      <button class="btn btn-white" (click)="closeModal()">
+        {{ "write_review_modal.cancel" | translate}}
+      </button>
+      <button class="btn btn-primary" (click)="closeModal()">
+        {{ "write_review_modal.post" | translate}}
+      </button>
+    </div>
+  </div>
+</app-modal>

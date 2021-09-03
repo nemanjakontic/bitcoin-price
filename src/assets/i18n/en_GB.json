@@ -1,0 +1,9 @@
+{
+  "test": "test - app",
+  "navigation": {
+    "example": "Example nav"
+  },
+  "footer": {
+    "about_us": "Example"
+  }
+}

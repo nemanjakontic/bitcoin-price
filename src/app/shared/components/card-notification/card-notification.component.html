@@ -1,0 +1,33 @@
+<div class="card-notification">
+  <div class="card-notification__image-and-checkbox">
+    <div class="card-notification__checkbox">
+      <div class="card-notification__icon-box" (click)="check()">
+        <svg class="icon-sized-3 icon-secondary-lighter" *ngIf="!checked">
+          <use xlink:href="/assets/icons/Check_mark_in_circle_Inactive.svg#Isolation_Mode"></use>
+        </svg>
+        <svg class="icon-sized-3 icon-primary" *ngIf="checked">
+          <use xlink:href="/assets/icons/Check_mark_in_circle.svg#Isolation_Mode"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="card-notification__image-box">
+      <div class="card-notification__image">
+        <!-- here goes image -->
+        <div class="card-notification__image--icon">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-notification__description">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam placeat ipsam alias, non laboriosam amet?</p>
+    <span>2 hours ago</span>
+  </div>
+  <div class="card-notification__details">
+    <div class="card-notification__icon-box">
+      <svg class="icon-sized-3 icon-primary">
+        <use xlink:href="/assets/icons/Down_Carot.svg#Layer_1"></use>
+      </svg>
+    </div>
+  </div>
+</div>

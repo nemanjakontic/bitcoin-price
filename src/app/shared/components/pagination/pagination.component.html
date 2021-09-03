@@ -1,0 +1,25 @@
+<div class="pagination">
+  <div class="pagination__left">
+    <button class="btn btn-text" (click)="showAllResults()">SHOW ALL RESULTS</button>
+  </div>
+  <div class="pagination__right">
+    <button
+      class="pagination__previous btn btn-text btn-small"
+      [disabled]="pagination.first"
+      [ngClass]="{inactive: pagination.first}"
+      (click)="pageChange.next(pagination.page - 1)"
+    >&lt;</button>
+    <div class="pagination__pages">
+      <button class="btn btn-text btn-small" *ngFor="let i of [1,2,3,4,5]" (click)="changePage(i)" [ngClass]="[i === currentPage ? 'pagination__active-page' : '']">
+        {{ i }}
+      </button>
+      ...
+    </div>
+    <button
+      class="pagination__next btn btn-text btn-small"
+      [disabled]="pagination.last"
+      [ngClass]="{inactive: pagination.last}"
+      (click)="pageChange.next(pagination.page + 1)"
+    >&gt;</button>
+  </div>
+</div>

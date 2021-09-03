@@ -1,0 +1,48 @@
+// This is style for icons
+// TODO this should be deleted
+.icon-class {
+  font-size: 1.7rem;
+}
+
+.icon-white {
+  color: $color-white;
+}
+
+.icon-color-secondary {
+  color: $color-secondary;
+}
+
+.icon-color-primary {
+  color: $color-primary;
+}
+
+.icon-center {
+  @include center-absolute;
+}
+// TODO
+
+.icon-sized {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-sized-3 {
+  height: 3rem;
+  width: 3rem;
+}
+
+.icon-white {
+  fill: $color-white;
+}
+
+.icon-primary {
+  fill: $color-primary;
+}
+
+.icon-secondary {
+  fill: $color-secondary;
+}
+
+.icon-secondary-lighter {
+  fill: $color-secondary-lighter;
+}

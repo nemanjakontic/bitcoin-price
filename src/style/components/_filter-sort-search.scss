@@ -1,0 +1,102 @@
+.filter-sort-search {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+  @include respond(sm) {
+    flex-direction: column;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__right {
+    flex-basis: 40%;
+  }
+
+  &__results {
+
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+
+    @include respond(sm) {
+      order: -1;
+      justify-content: center;
+    }
+  }
+
+  &__filter-sort {
+    padding: 0 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__filter {
+
+  }
+
+  &__sort {
+
+  }
+
+  &__number-of-deals {
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__divider {
+    height: 2rem;
+    border-left: 1px solid $color-secondary;
+    padding-right: 3rem;
+  }
+
+  &__arrow {
+    display: inline;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+}
+
+[appFilter] {
+  position: relative;
+}
+
+.filter__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 15rem;
+  background-color: $color-white-dark;
+  z-index: 100;
+  font-size: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+  // @include respond(sm) {
+  //   position: relative;
+  // }
+
+  &--list {
+    list-style: none;
+    padding: 1rem 0;
+  }
+
+  &--item {
+    padding: 1rem 2rem;
+    width: 100%;
+
+    &:hover {
+      background-color: $color-secondary-lightest;
+    }
+  }
+}

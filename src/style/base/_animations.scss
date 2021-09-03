@@ -1,0 +1,31 @@
+// defining animations
+
+@keyframes roundAnimation {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    transform: translate(-50%, -300%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

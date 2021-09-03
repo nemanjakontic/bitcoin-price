@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__previous {
+    color: $color-primary;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &__pages {
+    font-size: 2rem;
+    padding: 0 1rem 0 0;
+    color: $color-primary;
+  }
+
+  &__next {
+    color: $color-primary;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &__active-page {
+    border-bottom: 1px solid $color-primary;
+  }
+
+}
+
+.inactive {
+  // TODO pronaci pravu boju za ovu klasu
+  // color: $color-primary-light;
+}

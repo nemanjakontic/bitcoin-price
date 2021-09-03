@@ -1,0 +1,74 @@
+.error {
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80vh;
+
+    @include respond(sm) {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+    }
+  }
+
+  &__left {
+    padding-top: 10rem;
+
+    @include respond(sm) {
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+
+  &__right {
+    background-image: url(/assets/images/error404/error.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    flex-basis: 60%;
+    height: 70vh;
+
+    @include respond(sm) {
+      background-position: center;
+      flex-basis: auto;
+      height: 40vh;
+    }
+  }
+
+  &__heading-main {
+    @include respond(sm) {
+      font-size: 9rem;
+    }
+  }
+
+  &__heading-404 {
+    @include respond(sm) {
+      display: none;
+    }
+  }
+
+  &__heading-404-1 {
+    display: none;
+
+    @include respond(sm) {
+      display: block;
+      text-align: center;
+      font-size: 4rem;
+    }
+  }
+
+  &__heading-text {
+    @include respond(sm) {
+      font-weight: normal;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__heading-return {
+    @include respond(sm) {
+      padding-right: 0;
+      font-size: 3rem;
+    }
+  }
+}

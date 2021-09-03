@@ -1,0 +1,67 @@
+<div class="filter-sort-search">
+  <div class="filter-sort-search__left">
+    <div class="filter-sort-search__results">
+      <p *ngIf="!dealsInsights">134 results</p>
+      <h1 *ngIf="dealsInsights">Deals Posts</h1>
+    </div>
+    <div class="filter-sort-search__options">
+      <div appFilter class="filter-sort-search__filter-sort filter-sort-search__filter" *ngIf="!deals && !dealsInsights">
+        <p>Filter</p>
+        <div class="filter-sort-search__arrow">
+          <svg class="icon-sized icon-secondary">
+            <use href="/assets/icons/Arrow_Down.svg#Layer_1"></use>
+          </svg>
+          <!-- <svg class="icon-sized icon-secondary" *ngIf="toggleOpen">
+            <use href="/assets/icons/Arrow_Up.svg#Layer_1"></use>
+          </svg> -->
+        </div>
+        <ng-template #filterTemplate>
+          <div class="filter__menu">
+            <ul class="filter__menu--list">
+              <li class="filter__menu--item">Most Recent</li>
+              <li class="filter__menu--item">Most Popular</li>
+              <li class="filter__menu--item">Expiring Soon</li>
+              <li class="filter__menu--item">Lowest Price</li>
+              <li class="filter__menu--item">Highest Price</li>
+              <li class="filter__menu--item">Near Me</li>
+              <li class="filter__menu--item">A - Z</li>
+              <li class="filter__menu--item">Z - A</li>
+            </ul>
+          </div>
+        </ng-template>
+      </div>
+      <div class="filter-sort-search__divider" *ngIf="!deals && !dealsInsights"></div>
+      <div class="filter-sort-search__number-of-deals" *ngIf="dealsInsights">
+        <p><span>4</span> posts published in the last 28 days</p>
+      </div>
+      <div appFilter class="filter-sort-search__filter-sort filter-sort-search__sort" *ngIf="!dealsInsights">
+        <p>Sort</p>
+        <div class="filter-sort-search__arrow">
+          <svg class="icon-sized icon-secondary">
+            <use href="/assets/icons/Arrow_Down.svg#Layer_1"></use>
+          </svg>
+          <!-- <svg class="icon-sized icon-secondary" *ngIf="toggleOpen">
+            <use href="/assets/icons/Arrow_Up.svg#Layer_1"></use>
+          </svg> -->
+        </div>
+        <ng-template #filterTemplate>
+          <div class="filter__menu">
+            <ul class="filter__menu--list">
+              <li class="filter__menu--item">Most Recent</li>
+              <li class="filter__menu--item">Most Popular</li>
+              <li class="filter__menu--item">Expiring Soon</li>
+              <li class="filter__menu--item">Lowest Price</li>
+              <li class="filter__menu--item">Highest Price</li>
+              <li class="filter__menu--item">Near Me</li>
+              <li class="filter__menu--item">A - Z</li>
+              <li class="filter__menu--item">Z - A</li>
+            </ul>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="filter-sort-search__right">
+    <app-search-bar [icon]="'search'" [position]="'right'" [placeholder]="'Search Results'"></app-search-bar>
+  </div>
+</div>

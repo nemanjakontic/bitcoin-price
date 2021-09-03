@@ -1,0 +1,46 @@
+// styles for search bar
+
+.search-bar {
+  position: relative;
+
+  // @include respond(sm) {
+  //   display: none;
+  // }
+
+  &__input {
+    width: 100%;
+    padding: 0.7rem 4rem;
+    border: none;
+    border-radius: 3px;
+    color: $color-secondary;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: all .2s;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $color-secondary;
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgba($color-secondary, 0.6);
+    }
+  }
+
+  .icon-class {
+    position: absolute;
+  }
+}
+
+.left {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+}
+
+.right {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}

@@ -1,0 +1,19 @@
+.form__group {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+
+
+.form__input {
+  padding: 0.5rem 1rem;
+}
+
+.x--icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.form__with-x {
+  display: inline-block;
+}

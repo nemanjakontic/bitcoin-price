@@ -1,0 +1,65 @@
+<div class="insights-card">
+  <div class="insights-card__image-box">
+    <!-- TODO add icon -->
+  </div>
+  <div class="insights-card__top-part">
+    <div class="insights-card__info">
+      <p>08/10/2019</p>
+      <h2>Some deal or product name for ...</h2>
+    </div>
+    <div class="insights-card__count">
+      <div class="insights-card__number">
+        <p>Clicks</p>
+        <h2>59</h2>
+      </div>
+      <div class="insights-card__line"></div>
+    </div>
+    <div class="insights-card__count">
+      <div class="insights-card__number">
+        <p>Requests</p>
+        <h2>59</h2>
+      </div>
+      <div class="insights-card__line"></div>
+    </div>
+    <div class="insights-card__count">
+      <div class="insights-card__number">
+        <p>Favorites</p>
+        <h2>59</h2>
+      </div>
+      <div class="insights-card__line"></div>
+    </div>
+    <div class="insights-card__rating" *ngIf="reviews">
+      <div class="insights-card__star-container">
+        <svg class="icon-primary" width="100%" height="100%">
+          <use href="/assets/icons/Star.svg#Layer_1"></use>
+        </svg>
+      </div>
+      <div class="insights-card__star-container">
+        <svg class="icon-primary" width="100%" height="100%">
+          <use href="/assets/icons/Star.svg#Layer_1"></use>
+        </svg>
+      </div>
+      <div class="insights-card__star-container">
+        <svg class="icon-primary" width="100%" height="100%">
+          <use href="/assets/icons/Star.svg#Layer_1"></use>
+        </svg>
+      </div>
+      <div class="insights-card__star-container">
+        <svg class="icon-primary" width="100%" height="100%">
+          <use href="/assets/icons/Star.svg#Layer_1"></use>
+        </svg>
+      </div>
+      <div class="insights-card__star-container">
+        <svg class="icon-primary" width="100%" height="100%">
+          <use href="/assets/icons/Star.svg#Layer_1"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="insights-card__buttons" *ngIf="!reviews">
+      <button class="btn btn-text">Export Data</button>
+      <button class="btn btn-white">View more</button>
+    </div>
+  </div>
+  <div class="insights-card__bottom-part"></div>
+</div>
+

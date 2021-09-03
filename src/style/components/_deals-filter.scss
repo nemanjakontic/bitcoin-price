@@ -1,0 +1,32 @@
+.deals-filter {
+  padding: 2rem 0;
+
+  &__top {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    transition: max-height 1s;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  &__arrow {
+    padding-left: 1rem;
+    padding-top: 3rem;
+  }
+
+  &__show {
+    max-height: 30rem;
+  }
+}

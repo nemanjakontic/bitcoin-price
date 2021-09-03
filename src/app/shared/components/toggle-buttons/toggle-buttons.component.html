@@ -1,0 +1,30 @@
+<div class="toggle-buttons">
+  <div class="container">
+    <div class="toggle-buttons__wrapper">
+      <div class="toggle-buttons__button" *ngIf="firstButton">
+        <button class="btn btn-white" [routerLink]="[firstButton.toLowerCase()]" routerLinkActive="active">
+          {{ firstButton }}
+          <span>17</span>
+        </button>
+      </div>
+      <div class="toggle-buttons__button" *ngIf="secondButton">
+        <button class="btn btn-white" [routerLink]="[secondButton.toLowerCase().replace(' ', '-')]" routerLinkActive="active">
+          {{ secondButton }}
+          <span>14</span>
+        </button>
+      </div>
+      <div class="toggle-buttons__button" *ngIf="thirdButton">
+        <button class="btn btn-white" [routerLink]="[thirdButton.toLowerCase().replace(' ', '-')]" routerLinkActive="active">
+          {{ thirdButton }}
+          <span>28</span>
+        </button>
+      </div>
+      <div class="toggle-buttons__button" *ngIf="forthButton">
+        <button class="btn btn-white" [routerLink]="[forthButton.toLowerCase().replace(' ', '-')]" routerLinkActive="active">
+          {{ forthButton }}
+          <span>45</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
