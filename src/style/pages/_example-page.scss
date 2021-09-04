@@ -24,7 +24,6 @@
       }
 
       .paragraph-box {
-
         p {
           font-size: 2rem;
           font-weight: 100;
@@ -35,7 +34,6 @@
 
   // part for how it works
   &__how-it-works {
-
     &--text-box {
       margin: 5rem 0;
 
@@ -45,7 +43,6 @@
     }
 
     &__offers {
-
       &--list {
         display: flex;
         justify-content: space-between;
@@ -109,10 +106,6 @@
     padding: 5rem 5rem;
     min-height: 60rem;
 
-    &--text {
-
-    }
-
     &--figure {
       width: 50rem;
       height: 50rem;
@@ -122,12 +115,11 @@
       shape-outside: circle(50%);
       -webkit-clip-path: circle(50%);
       clip-path: circle(50%);
-
       position: relative;
       margin-right: 15rem;
 
       @include respond(md) {
-       float: none;
+        float: none;
       }
 
       @include respond(sm) {

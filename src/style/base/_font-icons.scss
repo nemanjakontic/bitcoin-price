@@ -6,6 +6,7 @@
 
 .icon-white {
   color: $color-white;
+  fill: $color-white;
 }
 
 .icon-color-secondary {
@@ -29,10 +30,6 @@
 .icon-sized-3 {
   height: 3rem;
   width: 3rem;
-}
-
-.icon-white {
-  fill: $color-white;
 }
 
 .icon-primary {

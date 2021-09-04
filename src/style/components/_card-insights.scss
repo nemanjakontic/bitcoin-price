@@ -33,7 +33,7 @@
     margin-left: auto;
     opacity: 0;
     visibility: hidden;
-    transition: all .3s;
+    transition: all 0.3s;
 
     @include respond(sm) {
       flex-basis: 0;
@@ -90,7 +90,6 @@
     // !for testing
     height: 8rem;
     background-color: $color-primary-light;
-
     position: relative;
 
     @include respond(sm) {
@@ -171,7 +170,6 @@
   &__round-buttons {
     display: flex;
   }
-
 }
 
 .btn-round {
@@ -181,7 +179,7 @@
   height: 4rem;
   margin-left: 2rem;
   position: relative;
-  transition: all .2s;
+  transition: all 0.2s;
 
   &:hover {
     background-color: $color-secondary;

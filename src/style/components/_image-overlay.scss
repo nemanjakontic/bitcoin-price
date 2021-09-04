@@ -1,5 +1,4 @@
 .image-overlay {
-
   &__backdrop {
     position: fixed;
     left: 0;
@@ -14,7 +13,9 @@
 
   &__picture {
     position: absolute;
+
     @include center-absolute;
+
     width: 50rem;
     height: 50rem;
     background-color: white;

@@ -1,0 +1,45 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": 2,
+    "unit-allowed-list": [
+      "px",
+      "dpi",
+      "dppx",
+      "em",
+      "rem",
+      "s",
+      "%",
+      "deg",
+      "ms",
+      "vh",
+      "vw",
+      "pt"
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "function",
+          "if",
+          "each",
+          "include",
+          "mixin",
+          "for",
+          "return",
+          "extend"
+        ]
+      }
+    ],
+    "no-empty-source": null,
+    "no-eol-whitespace": null,
+    "no-descending-specificity": null,
+    "selector-type-no-unknown": [true, { "ignoreTypes": [
+      "/^app-/",
+      "/^ngb-/",
+      "custom-type"
+    ] }],
+    "font-family-no-missing-generic-family-keyword": null,
+    "comment-whitespace-inside": null
+  }
+}

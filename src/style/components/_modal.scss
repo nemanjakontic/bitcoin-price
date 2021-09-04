@@ -6,7 +6,7 @@
   height: 100vh;
   z-index: 990;
   transition: all 3s;
-  animation: appear .3s;
+  animation: appear 0.3s;
   overflow-y: hidden;
 
   &__overlay {
@@ -23,7 +23,9 @@
 
   &__content {
     z-index: 999;
+
     @include center-absolute;
+
     max-height: 90%;
     overflow-y: auto;
     background-color: $color-white;
@@ -31,7 +33,7 @@
     box-shadow: 0 1rem 2rem rgba($color-black, 0.7);
     max-width: 90%;
     min-width: 50rem;
-    animation: fromTop .3s;
+    animation: fromTop 0.3s;
 
     @include respond(sm) {
       padding: 4rem 2rem;
@@ -48,7 +50,7 @@
 
     &--icon {
       cursor: pointer;
-      transition: all .2s;
+      transition: all 0.2s;
       width: 2rem;
       height: 2rem;
 
