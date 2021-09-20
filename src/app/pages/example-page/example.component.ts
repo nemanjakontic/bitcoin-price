@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'senscare-example',
+  selector: 'app-example',
   templateUrl: './example.component.html',
   styleUrls: ['./example.component.scss']
 })

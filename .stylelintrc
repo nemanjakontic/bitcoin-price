@@ -35,7 +35,7 @@
     "no-eol-whitespace": null,
     "no-descending-specificity": null,
     "selector-type-no-unknown": [true, { "ignoreTypes": [
-      "/^senscare-/",
+      "/^app-/",
       "/^ngb-/",
       "custom-type"
     ] }],

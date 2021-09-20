@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'senscare-search-bar-mobile',
+  selector: 'app-search-bar-mobile',
   templateUrl: './search-bar-mobile.component.html',
   styleUrls: ['./search-bar-mobile.component.scss']
 })

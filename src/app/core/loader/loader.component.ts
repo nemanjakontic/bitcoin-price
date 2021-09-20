@@ -4,7 +4,7 @@ import { LoadingService } from './loading.service';
 import { delay } from 'rxjs/operators';
 
 @Component({
-  selector: 'senscare-loader',
+  selector: 'app-loader',
   templateUrl: './loader.component.html',
   styleUrls: ['./loader.component.scss']
 })

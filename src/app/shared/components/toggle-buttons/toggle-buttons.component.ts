@@ -2,7 +2,7 @@ import { Component, Input, Output } from '@angular/core';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'senscare-toggle-buttons',
+  selector: 'app-toggle-buttons',
   templateUrl: './toggle-buttons.component.html',
   styleUrls: ['./toggle-buttons.component.scss']
 })

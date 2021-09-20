@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { AppConfigService } from './core/services/app-config-service/app-config.service';
 
 @Component({
-  selector: 'senscare-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
