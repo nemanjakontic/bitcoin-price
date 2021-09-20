@@ -2,7 +2,7 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'app-image-overlay',
+  selector: 'senscare-image-overlay',
   templateUrl: './image-overlay.component.html',
   styleUrls: ['./image-overlay.component.scss']
 })

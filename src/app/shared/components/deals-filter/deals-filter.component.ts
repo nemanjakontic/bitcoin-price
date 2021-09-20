@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-deals-filter',
+  selector: 'senscare-deals-filter',
   templateUrl: './deals-filter.component.html',
   styleUrls: ['./deals-filter.component.scss']
 })

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-filter-sort-search',
+  selector: 'senscare-filter-sort-search',
   templateUrl: './filter-sort-search.component.html',
   styleUrls: ['./filter-sort-search.component.scss']
 })

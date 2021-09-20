@@ -4,12 +4,12 @@ import { LoadingService } from './loading.service';
 import { delay } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-loader',
+  selector: 'senscare-loader',
   templateUrl: './loader.component.html',
   styleUrls: ['./loader.component.scss']
 })
 export class LoaderComponent implements OnInit {
-  loading: boolean = false;
+  loading = false;
 
   constructor(
     private loadingService: LoadingService

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-card-notification',
+  selector: 'senscare-card-notification',
   templateUrl: './card-notification.component.html',
   styleUrls: ['./card-notification.component.scss']
 })

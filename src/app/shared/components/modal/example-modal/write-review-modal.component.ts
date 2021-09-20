@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalService } from '../modal.service';
 
 @Component({
-  selector: 'app-write-review-modal',
+  selector: 'senscare-write-review-modal',
   templateUrl: './write-review-modal.component.html',
   styleUrls: ['./write-review-modal.component.scss']
 })

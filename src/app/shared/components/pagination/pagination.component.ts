@@ -3,7 +3,7 @@ import { Subject } from 'rxjs';
 import { Pagination } from './pagination';
 
 @Component({
-  selector: 'app-pagination',
+  selector: 'senscare-pagination',
   templateUrl: './pagination.component.html',
   styleUrls: ['./pagination.component.scss']
 })
