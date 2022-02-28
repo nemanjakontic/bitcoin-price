@@ -1,25 +1,36 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'app-card',
+  selector: 'pro-glove-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
   /**
-   * Boolean to determine on which page is card
+   * Headline for card component
    */
-  @Input() businessDirectory!: boolean;
-  @Input() businesses!: boolean;
-  @Input() deals!: boolean;
-  @Input() dealsProfile!: boolean;
-  @Input() dealRequests!: boolean;
+  @Input() headline?: string;
 
   /**
-   * Input fields for card on Business directory page
+   * Sub-headline for card component
    */
-  @Input() directoryName!: string;
-  @Input() location!: string;
-  @Input() image!: string;
-  @Input() numberOfLikes!: string;
+  @Input() subheadline?: string;
+
+  /**
+   * Name for action button
+   */
+  @Input() actionName?: string;
+
+  /**
+   * Emits when the action button was clicked
+   */
+  @Output() actionButtonClicked = new Subject();
+
+  /**
+   * Method for handling action button click
+   */
+  reloadInformation(): void {
+    this.actionButtonClicked.next();
+  }
 }

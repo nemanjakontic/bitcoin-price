@@ -1,51 +1,12 @@
-<div class="directory-card">
-  <div class="directory-card__image-box">
-    <div class="directory-card__like-box directory-card__like-box-left" *ngIf="businessDirectory">
-      <svg class="icon-primary">
-        <use href="/assets/icons/Recommend.svg#Layer_1"></use>
-      </svg>
-      <p>(357)</p>
+<div class="card">
+  <div class="top">
+    <div class="title">
+      <h1 class="headline">{{ headline }}</h1>
+      <h3 class="sub-headline">{{ subheadline }}</h3>
     </div>
-    <div class="directory-card__like-box directory-card__like-box-left" *ngIf="(deals && !dealsProfile) || dealRequests">
-      <svg class="icon-primary" width="90%" height="90%">
-        <use href="/assets/icons/Heart_Favorite.svg#Layer_1"></use>
-      </svg>
-    </div>
-    <div class="directory-card__like-box directory-card__like-box-left" *ngIf="dealsProfile">
-      <svg class="icon-primary" width="90%" height="90%">
-        <use href="/assets/icons/Delete.svg#Layer_1"></use>
-      </svg>
-    </div>
-    <div class="directory-card__like-box directory-card__like-box-right" *ngIf="dealsProfile">
-      <svg class="icon-primary" width="90%" height="90%">
-        <use href="/assets/icons/Hide.svg#Layer_1"></use>
-      </svg>
-    </div>
-    <div class="directory-card__like-box directory-card__like-box-right-bottom" *ngIf="dealsProfile">
-      <svg class="icon-primary" width="90%" height="90%">
-        <use href="/assets/icons/Edit.svg#Layer_1"></use>
-      </svg>
-    </div>
-    <div class="directory-card__date-box" *ngIf="dealRequests">
-      <p>5/19/19</p>
-    </div>
+    <button (click)="reloadInformation()">{{ actionName }}</button>
   </div>
-  <div class="directory-card__description">
-    <div class="directory-card__text" *ngIf="businesses || businessDirectory">
-      <h2>Green Port Express</h2>
-      <p>Long Beach, CA</p>
-    </div>
-    <div class="directory-card__text--deals" *ngIf="deals || dealRequests">
-      <div>
-        <h2>20% Off on a Fantastic Product</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quisquam enim mollitia.</p>
-      </div>
-    </div>
-    <div class="directory-card__footer" *ngIf="deals || dealRequests">
-      <div class="directory-card__footer--image-box">
-
-      </div>
-      <p>COMPANY NAME | CO</p>
-    </div>
+  <div class="bottom">
+    <ng-content select=".content"></ng-content>
   </div>
 </div>

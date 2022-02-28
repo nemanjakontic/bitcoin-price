@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiEndpoint: 'https://api.coindesk.com/v1/bpi/currentprice.json'
 };

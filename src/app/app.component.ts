@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { AppConfigService } from './core/services/app-config-service/app-config.service';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,9 @@ import { AppConfigService } from './core/services/app-config-service/app-config.
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-structure';
+  title = 'Pro Glove';
 
   constructor(
-    private config: AppConfigService,
     private translate: TranslateService
   ) {
     this.translate.addLangs(['en_GB']);

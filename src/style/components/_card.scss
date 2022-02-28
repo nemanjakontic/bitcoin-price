@@ -1,116 +1,52 @@
-.directory-card {
-  box-shadow: 0 0.3rem 1rem rgba($color-black, 0.2);
+.card {
   background-color: $color-white;
-  border-radius: 3px;
-  overflow: hidden;
+  @include box-shadow;
+  margin-bottom: 2rem;
 
-  @include respond(sm) {
+  .top {
+    padding: 5.4rem;
+    border-bottom: 1px solid $color-primary;
     display: flex;
-  }
-
-  &__image-box {
-    // !for testing
-    height: 15rem;
-    background-color: $color-primary-light;
-    position: relative;
-    flex-basis: 50%;
-
-    @include respond(sm) {
-      height: auto;
-    }
-  }
-
-  &__like-box {
-    position: absolute;
-    // top: 1rem;
-    // left: 1.5rem;
-    color: $color-primary;
-    height: 3rem;
-    width: 3rem;
-    transition: all 0.4s;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-
-    &-left {
-      top: 1rem;
-      left: 1.5rem;
-    }
-
-    &-right {
-      top: 1rem;
-      right: 1rem;
-    }
-
-    &-right-bottom {
-      top: 6rem;
-      right: 1rem;
-    }
-
-    p {
-      display: inline;
-      margin-left: 0.5rem;
-      position: absolute;
-      top: 0;
-      left: 3rem;
-    }
-  }
-
-  &__date-box {
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    background-color: $color-white;
-
-    p {
-      color: $color-secondary;
-      line-height: 1;
-      padding: 0.3rem 1rem;
-      font-size: 1.4rem;
-    }
-  }
-
-  &__description {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-  }
-
-  &__text {
-    padding: 1rem 3rem;
-    text-align: center;
-  }
-
-  &__text--deals {
-    padding: 2rem;
-
-    h2 {
-      text-align: center;
-    }
-
-    p {
-      text-align: justify;
-      line-height: 1.2;
-    }
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
 
-    &--image-box {
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      background-color: $color-secondary;
-      margin-right: 1rem;
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
+  }
 
-    p {
-      color: $color-primary;
+  .bottom {
+    padding: 5.4rem;
+
+    .content {
+      p {
+        font-size: 3rem;
+
+        &.green {
+          color: green;
+        }
+
+        &.red {
+          color: red;
+        }
+      }
+
+      table {
+        th {
+          font-weight: 700;
+        }
+
+        td {
+          font-weight: 300;
+        }
+      }
+
+      table > * {
+        font-size: 3.8rem;
+      }
     }
   }
 }

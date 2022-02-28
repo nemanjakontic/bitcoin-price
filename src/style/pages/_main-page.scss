@@ -1,0 +1,22 @@
+.main {
+  background-color: $color-background;
+  min-height: 100vh;
+  padding-bottom: 17rem;
+
+  .container {
+    max-width: 110rem;
+    margin: 0 auto;
+
+    @include respond(lg) {
+      max-width: 96rem;
+    }
+
+    @include respond(md) {
+      max-width: 72rem;
+    }
+
+    @include respond(sm) {
+      max-width: 95%;
+    }
+  }
+}

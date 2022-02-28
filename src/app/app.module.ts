@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { Observable, from } from 'rxjs';
@@ -6,11 +6,6 @@ import { Observable, from } from 'rxjs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { AppConfigService } from './core/services/app-config-service/app-config.service';
-
-export function initConfig(appConfig: AppConfigService) {
-  return () => appConfig.loadConfig();
-}
 
 export class AppTranslateLoader implements TranslateLoader {
   getTranslation(lang: string): Observable<any> {
@@ -34,14 +29,7 @@ export class AppTranslateLoader implements TranslateLoader {
       },
     })
   ],
-  providers: [
-    {
-      provide: APP_INITIALIZER,
-      useFactory: initConfig,
-      deps: [AppConfigService],
-      multi: true,
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

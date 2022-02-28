@@ -1,37 +1,17 @@
 // Import dependencies
 @import "./abstracts/include";
 
-// TODO Font awesome - if we have it
-
 // Import bootstrap and base
-@import "./vendors/bootstrap";
 @import "./base/base";
-@import "./base/font-icons";
 @import "./base/fonts";
-@import "./base/animations";
 @import "./base/typography";
-@import "./base/utilities";
 
 // Import components
+@import "./components/bitcoin-table";
 @import "./components/buttons";
-@import "./components/card-insights";
-@import "./components/card-list-container";
-@import "./components/card-product";
+@import "./components/card-list";
 @import "./components/card";
-@import "./components/deals-filter";
-@import "./components/filter-sort-search";
-@import "./components/form";
-@import "./components/image-overlay";
-@import "./components/modal";
-@import "./components/pagination";
-@import "./components/search-bar-mobile";
-@import "./components/search-bar";
-@import "./components/toggle-buttons";
-
-// Import layout
-@import "./layout/footer";
-@import "./layout/navigation";
 
 // Import pages styles
 @import "./pages/error404";
-@import "./pages/example-page";
+@import "./pages/main-page";

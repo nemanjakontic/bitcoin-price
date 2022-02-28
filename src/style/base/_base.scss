@@ -11,30 +11,10 @@ html {
   // by default, font-size is 16px, we want to set 1rem = 10px
   // because of simpler calculation and 62.5% is 10px --> 10/16
   font-size: 62.5%;
-
-  @include respond(xl) {
-    // width < 1200?
-    font-size: 56.25%; // 1rem = 9px; 9px/16x = 56.25%
-  }
-
-  @include respond(lg) {
-    // width < 900?
-    font-size: 50%; // 1rem = 8px; 8px/16x = 50%
-  }
-
-  @include respond(md) {
-    // width < 600?
-    font-size: 50%; // 1rem = 8px; 8px/16x = 50%
-  }
-
-  @include respond(xxl) {
-    // width > 1400 - pogledati da li je ovde potrebno staviti manji procenat, 62.5% deluje ok
-    font-size: 62.5%; // 1rem = 12px; 12px/16x = 75%
-  }
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Calibri';
   font-weight: 400;
   line-height: 1.7;
   color: $color-secondary;

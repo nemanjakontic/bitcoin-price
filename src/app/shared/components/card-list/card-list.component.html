@@ -1,0 +1,28 @@
+<section class="card-list">
+  <pro-glove-card
+    (actionButtonClicked)="reloadPrice()"
+    [headline]="'Bitcoin'"
+    [subheadline]="'1 Bitcoin is currently worth'"
+    [actionName]="'Reload'"
+    >
+    <section class="content">
+      <p [ngClass]="getTrendColor()">{{ trendString ? 'Trend from last update: ' + trendString : '' }}</p>
+      <table>
+        <tbody>
+          <tr>
+            <th>EUR:</th>
+            <td>{{ bpi?.EUR?.rate_float | currency:'EUR'  }}</td>
+          </tr>
+          <tr>
+            <th>USD:</th>
+            <td>{{ bpi?.USD?.rate_float | currency:'USD' }}</td>
+          </tr>
+          <tr>
+            <th>GBP:</th>
+            <td>{{ bpi?.GBP?.rate_float | currency:'GBP' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </pro-glove-card>
+</section>
